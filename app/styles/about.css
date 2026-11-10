@@ -1,0 +1,101 @@
+.intro {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: clamp(50px, 9vw, 140px);
+  padding: 8px 0 36px;
+}
+.eyebrow {
+  font-size: 9px;
+  letter-spacing: .16em;
+  color: var(--muted);
+  font-weight: 600;
+}
+.intro h2 {
+  font: 500 clamp(54px, 7vw, 88px)/.95 var(--font-sans), sans-serif;
+  letter-spacing: -.055em;
+  margin: 10px 0 24px;
+}
+.intro h2 span, .work-header h2 span {
+  color: var(--rust);
+}
+.intro-copy {
+  max-width: 470px;
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--ink);
+}
+.secondary-copy {
+  color: var(--muted);
+  margin-top: 16px;
+}
+.social-links {
+  display: flex;
+  gap: 22px;
+  margin-top: 27px;
+  flex-wrap: wrap;
+}
+.social-links a, .modal-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 4px;
+  font-size: 11px;
+}
+.social-links a:hover, .modal-links a:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+.social-links a {
+  font-size: 14px;
+}
+.intro-right .eyebrow {
+  font-size: 11px;
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 12px 0 21px;
+}
+.heading-rule {
+  height: 1px;
+  flex: 1;
+  background: var(--line);
+}
+.experience-item {
+  padding: 0 0 17px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--line);
+}
+.experience-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 15px;
+}
+.experience-top span {
+  color: var(--muted);
+  font-size: 14px;
+}
+.experience-item p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.experience-item small {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.education-note {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  margin-top: 20px;
+}
+.education-note span {
+  color: var(--muted);
+}

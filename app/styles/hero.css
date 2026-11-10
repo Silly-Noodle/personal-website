@@ -1,0 +1,85 @@
+/* Dune-inspired hero */
+
+.dune-hero {
+  position: relative;
+  background: var(--paper);
+  overflow: hidden;
+}
+
+.dune-hero__art {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 100%;
+
+  background-image: url("/images/Hero (Light) - Background.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  /* Blend the artwork into the page */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 65%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 65%,
+    transparent 100%
+  );
+}
+
+.dune-hero__content {
+  position: relative;
+  z-index: 1;
+
+  padding-top: clamp(390px, 37vw, 530px);
+  padding-bottom: 40px;
+}
+
+.dune-hero h1 {
+  font-family: var(--font-name), sans-serif;
+  font-size: clamp(48px, 5.2vw, 76px);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+  margin: 0;
+}
+
+/* Reuse the available artwork until a dedicated dark illustration is added. */
+.site.dark .dune-hero__art {
+  filter: brightness(0.55) saturate(0.75);
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  .dune-hero__art {
+    height: 100%;
+    background-size: auto 450px;
+    background-position: 55% top;
+  }
+
+  .dune-hero__content {
+    padding-top: 350px;
+    padding-bottom: 28px;
+  }
+
+  .dune-hero h1 {
+    font-size: 52px;
+  }
+
+}
+
+.dune-hero__theme-toggle {
+  position: absolute;
+  top: 24px;
+  right: max(6vw, 24px);
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--ink);
+}

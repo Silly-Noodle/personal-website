@@ -1,29 +1,34 @@
+declare module "*.css";
+
 import type { Metadata } from "next";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Figtree, Jura } from "next/font/google";
 import "./globals.css";
 
-const display = Cormorant_Garamond({
-  subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
-});
-
-const sans = DM_Sans({
+const sans = Figtree({
   subsets: ["latin"],
   variable: "--font-sans",
   weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+});
+
+const name = Jura({
+  subsets: ["latin"],
+  variable: "--font-name",
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
   title: "Eric Huang — Selected Work",
-  description: "A collection of work, experiments, and things I'm curious about.",
+  description:
+    "A collection of work, experiments, and things I'm curious about.",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${display.variable} ${sans.variable}`}>{children}</body>
+      <body className={`${sans.variable} ${name.variable}`}>{children}</body>
     </html>
   );
 }

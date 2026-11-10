@@ -23,10 +23,24 @@ Search the project for `TODO` and `example.com`.
 ## Architecture
 
 - `app/`: Next.js routes, layout, and global styles.
-- `components/portfolio.tsx`: interactive homepage and project modal.
+- `components/portfolio.tsx`: shared theme shell and reduced-motion configuration.
+- `components/portfolio/`: hero with theme control, about section, project gallery, cards, and modal.
+- `app/styles/`: base styles, section styles, and shared responsive overrides, imported by `app/globals.css`.
 - `data/`: content separated from presentation.
 - `public/images/`: place project images here as you add them.
 
 ## Design notes
 
-The current hero and project artwork are intentionally CSS-based placeholders. This keeps the starter self-contained while the visual direction is being refined. The modal supports previous/next navigation, category filtering, a theme toggle, and responsive layouts.
+The hero uses the image in `public/images/`; project artwork uses CSS placeholders. The dark theme reuses the existing hero image with a darker filter until a dedicated illustration is available. The project gallery supports category filtering and previous/next navigation. The modal supports Escape, keyboard focus containment, focus restoration, and scroll locking.
+
+## Where to make changes
+
+- Page section order: `app/page.tsx`.
+- Shared theme: `components/portfolio.tsx`.
+- Section markup and interactions: the corresponding file in `components/portfolio/`.
+- Colors, shared controls, and typography defaults: `app/styles/base.css`.
+- Section appearance: the corresponding stylesheet in `app/styles/`.
+- Tablet and phone overrides: `app/styles/responsive.css` (hero-specific mobile rules live in `hero.css`).
+- Project descriptions and experience: `data/projects.ts` and `data/experience.ts`.
+
+Sections are composed by the server page. The theme shell, hero theme control, and project gallery are client components; gallery state stays inside `WorkSection`. All text uses Figtree except the hero name, which uses Jura.

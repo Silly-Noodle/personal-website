@@ -1,0 +1,47 @@
+@media (max-width: 760px) {
+.intro {
+  grid-template-columns: 1fr;
+  gap: 45px;
+  padding-top: 25px;
+}
+.project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.work-header {
+  align-items: flex-start;
+  flex-direction: column;
+}
+.work-aside {
+  margin: 0;
+}
+.modal-content {
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.modal-art {
+  min-height: 190px;
+}
+}
+@media (max-width: 480px) {
+.section-wrap {
+  width: min(100% - 40px, 1120px);
+}
+.project-grid {
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+.project-image {
+  height: 220px;
+}
+.filters {
+  gap: 16px;
+  overflow-x: auto;
+}
+.modal-backdrop {
+  padding: 10px;
+}
+.project-modal {
+  max-height: 94vh;
+  padding: 20px;
+}
+}
