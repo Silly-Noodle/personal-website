@@ -1,5 +1,3 @@
-declare module "*.css";
-
 import type { Metadata } from "next";
 import { Figtree, Jura } from "next/font/google";
 import "./globals.css";
@@ -28,7 +26,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${sans.variable} ${name.variable}`}>{children}</body>
+      {/* Browser extensions such as Grammarly can add body attributes before hydration. */}
+      <body
+        className={`${sans.variable} ${name.variable}`}
+        suppressHydrationWarning
+      >
+        {children}
+      </body>
     </html>
   );
 }

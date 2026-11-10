@@ -32,6 +32,7 @@ button {
 .site {
   min-height: 100vh;
   background: var(--paper);
+  color: var(--ink);
   transition: background .25s, color .25s;
 }
 .site.dark {

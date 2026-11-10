@@ -48,9 +48,11 @@
   margin: 0;
 }
 
-/* Reuse the available artwork until a dedicated dark illustration is added. */
 .site.dark .dune-hero__art {
-  filter: brightness(0.55) saturate(0.75);
+  background-image: url("/images/Hero (Dark).png");
+  /* Fade the artwork's cream base into the dark page before the heading. */
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 25%, transparent 70%);
+  mask-image: linear-gradient(to bottom, black 0%, black 25%, transparent 70%);
 }
 
 /* Mobile layout */
