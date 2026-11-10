@@ -1,18 +1,21 @@
 import type { Metadata } from "next";
-import { Figtree, Jura } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const sans = Figtree({
-  subsets: ["latin"],
+const sans = localFont({
+  src: "./fonts/Figtree.ttf",
   variable: "--font-sans",
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
+  weight: "400 700",
+  style: "normal",
+  display: "swap",
 });
 
-const name = Jura({
-  subsets: ["latin"],
+const name = localFont({
+  src: "./fonts/Jura.ttf",
   variable: "--font-name",
-  weight: ["400", "500", "600"],
+  weight: "400 600",
+  style: "normal",
+  display: "swap",
 });
 
 export const metadata: Metadata = {

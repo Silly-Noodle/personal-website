@@ -11,12 +11,13 @@ export function AboutSection() {
           debating life rock climbing, and golfing! I also love sci-fi stories.
         </p>
         <p className="intro-copy secondary-copy">
-          I'm interested in exploring the intersection of software engineering,
-          artificial intelligence, product development, and business strategy.
-          I'm particularly curious about full-stack development, data analytics,
-          automation, and scalable systems, and how emerging technologies can be
-          used to solve real-world problems and create meaningful products.
-          Usually starting, but not finishing projects. Reach out!
+          I&apos;m interested in exploring the intersection of software
+          engineering, artificial intelligence, product development, and
+          business strategy. I&apos;m particularly curious about full-stack
+          development, data analytics, automation, and scalable systems, and how
+          emerging technologies can be used to solve real-world problems and
+          create meaningful products. Usually starting, but not finishing
+          projects. Reach out!
         </p>
         <div className="social-links">
           <a
@@ -41,7 +42,7 @@ export function AboutSection() {
 
       <div className="intro-right">
         <div className="section-heading">
-          <span className="eyebrow">What I've been up to!</span>
+          <span className="eyebrow">What I&apos;ve been up to!</span>
           <span className="heading-rule" />
         </div>
         {experience.map((item) => (
