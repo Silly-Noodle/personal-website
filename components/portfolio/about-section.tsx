@@ -6,13 +6,17 @@ export function AboutSection() {
       <div className="intro-left">
         <p className="intro-copy">
           Hi, welcome to my corner of the internet! I&apos;m a CS + Business
-          student at Western University. I&apos;m interested in sci-fi books,
-          tech, and learning about how the world works!
+          student at Western University interested in working on complex
+          problems with software. My hobbies include reading, watching movies,
+          debating life rock climbing, and golfing! I also love sci-fi stories.
         </p>
         <p className="intro-copy secondary-copy">
-          Usually exploring something new, building small things, or trying to
-          understand how the world works. Always happy to talk about technology,
-          music, design, and ideas.
+          I'm interested in exploring the intersection of software engineering,
+          artificial intelligence, product development, and business strategy.
+          I'm particularly curious about full-stack development, data analytics,
+          automation, and scalable systems, and how emerging technologies can be
+          used to solve real-world problems and create meaningful products.
+          Usually starting, but not finishing projects. Reach out!
         </p>
         <div className="social-links">
           <a

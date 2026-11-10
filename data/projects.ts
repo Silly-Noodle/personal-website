@@ -1,4 +1,4 @@
-export type ProjectCategory = "Projects" | "Writing" | "Experiments";
+export type ProjectCategory = "Projects";
 
 export type Project = {
   id: string;
@@ -24,8 +24,14 @@ export const projects: Project[] = [
       "Built around a dashboard experience, with a focus on making complex system information approachable."
     ],
     tags: ["Next.js", "TypeScript", "PyBaMM", "Gemini API"],
-    image: "/images/revamp.jpg",
-    links: []
+    image: "/images/revamp.png",
+    links: [
+      { label: "Devpost", href: "https://devpost.com/software/reamp" },
+      {
+        label: "Watch demo",
+        href: "https://www.loom.com/share/93291af18bf344c69a9a546eca28857d?sid=d5204830-b15a-4d34-bd62-7626459607db"
+      }
+    ]
   },
   {
     id: "music-recommender",
@@ -43,7 +49,7 @@ export const projects: Project[] = [
   },
   {
     id: "connection-tracker",
-    title: "Connection Tracker",
+    title: "Connections Tracker",
     year: "2025",
     category: "Projects",
     description: "A lightweight tool for keeping track of conversations, people, and follow-ups.",
@@ -53,28 +59,6 @@ export const projects: Project[] = [
     ],
     tags: ["JavaScript", "React"],
     image: "/images/connections.jpg",
-    links: []
-  },
-  {
-    id: "notes",
-    title: "Notes on building",
-    year: "2026",
-    category: "Writing",
-    description: "Short reflections on making things, learning in public, and following curiosity.",
-    details: ["A place for essays, observations, and ideas that are still taking shape."],
-    tags: ["Writing", "Reflection"],
-    image: "/images/writing.jpg",
-    links: []
-  },
-  {
-    id: "small-experiments",
-    title: "Small experiments",
-    year: "2026",
-    category: "Experiments",
-    description: "A collection of small prototypes, sketches, and ideas worth exploring.",
-    details: ["Use this space for small things that don't need a full project write-up."],
-    tags: ["Prototypes", "Learning"],
-    image: "/images/experiments.jpg",
     links: []
   }
 ];
