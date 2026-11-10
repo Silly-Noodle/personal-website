@@ -32,7 +32,8 @@ export const projects: Project[] = [
         href: "https://www.loom.com/share/93291af18bf344c69a9a546eca28857d?sid=d5204830-b15a-4d34-bd62-7626459607db"
       }
     ]
-  },
+  }
+  /*,
   {
     id: "music-recommender",
     title: "Music Recommender",
@@ -60,5 +61,5 @@ export const projects: Project[] = [
     tags: ["JavaScript", "React"],
     image: "/images/connections.jpg",
     links: []
-  }
+  }*/
 ];
