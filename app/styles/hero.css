@@ -49,10 +49,17 @@
 }
 
 .site.dark .dune-hero__art {
-  background-image: url("/images/Hero (Dark).png");
-  /* Fade the artwork's cream base into the dark page before the heading. */
-  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 25%, transparent 70%);
-  mask-image: linear-gradient(to bottom, black 0%, black 25%, transparent 70%);
+  /* Keep the blue landscape visible while covering the image's cream base. */
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(10, 16, 32, 0.15) 0%,
+      rgba(10, 16, 32, 0.3) 35%,
+      var(--paper) 85%
+    ),
+    url("/images/Hero (Dark).png");
+  -webkit-mask-image: none;
+  mask-image: none;
 }
 
 /* Mobile layout */

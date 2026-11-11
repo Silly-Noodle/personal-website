@@ -19,9 +19,9 @@ const name = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Eric Huang — Selected Work",
+  title: "Eric Huang",
   description:
-    "A collection of work, experiments, and things I'm curious about.",
+    "Eric Huang's corner of the internt. Currently a Computer Science and Business student at Western University, exploring software engineering, technology, strategy, and creative projects.",
 };
 
 export default function RootLayout({

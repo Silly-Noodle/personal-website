@@ -30,12 +30,14 @@ button {
   color: inherit;
 }
 .site {
+  color-scheme: light;
   min-height: 100vh;
   background: var(--paper);
   color: var(--ink);
   transition: background .25s, color .25s;
 }
 .site.dark {
+  color-scheme: dark;
   --paper: #0a1020;
   --paper-deep: #101932;
   --ink: #e9f2ff;

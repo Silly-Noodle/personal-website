@@ -7,6 +7,9 @@ import { WorkSection } from "@/components/portfolio/work-section";
 export default function Home() {
   return (
     <Portfolio>
+      <head>
+        <link rel="icon" type="image/png" href="/images/Muad'Dib.png"></link>
+      </head>
       <main id="main-content">
         <Hero />
         <AboutSection />
@@ -14,13 +17,6 @@ export default function Home() {
       </main>
       <footer className="farewell section-wrap">
         <p>Hope you&apos;ve enjoyed your stay!</p>
-        <Image
-          src="/images/Muad'Dib.png"
-          alt="Muad'Dib"
-          width={160}
-          height={160}
-          className="farewell-image"
-        />
       </footer>
     </Portfolio>
   );
