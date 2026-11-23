@@ -98,6 +98,13 @@
   transform: translateY(-4px);
   filter: saturate(1.08);
 }
+.image-medusa {
+  background: #dce8df url('/images/medusa.svg') center / contain no-repeat;
+}
+.image-medusa .image-title,
+.modal-art.image-medusa > span {
+  display: none;
+}
 .image-revamp {
   background: #dce6e2 url('/images/revamp.png') center / cover no-repeat;
 }

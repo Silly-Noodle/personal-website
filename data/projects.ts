@@ -14,6 +14,23 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "medusa",
+    title: "Medusa",
+    year: "2026",
+    category: "Projects",
+    description: "A screen privacy concept inspired by Alt-Tab that uses physical AI to detect when someone looks over your shoulder and switches screens so you can play video games at work to your heart's content.",
+    details: [
+      "Designed for the QNX track at Hack Western 13, Medusa pairs a laptop webcam with a Raspberry Pi 5 and an Arduino UNO Q.",
+      "The hardware design includes a motorized spotlight for a marked demo target. The project repository includes printable CAD files for the mount shown here."
+    ],
+    tags: ["QNX", "Raspberry Pi", "Arduino", "CAD"],
+    image: "/images/medusa.svg",
+    links: [
+      { label: "Devpost", href: "https://devpost.com/software/medusa-mdaqui?ref_content=user-portfolio&ref_feature=in_progress" },
+      { label: "GitHub", href: "https://github.com/Leo-Zh9/Medusa" }
+    ]
+  },
+  {
     id: "revamp",
     title: "Revamp",
     year: "2026",
