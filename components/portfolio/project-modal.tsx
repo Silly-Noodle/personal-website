@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { ArrowUpRight, ChevronLeft, ChevronRight, X } from "lucide-react";
@@ -89,9 +90,21 @@ export function ProjectModal({ project, position, total, onClose, onNavigate }: 
             ) : null}
           </div>
         </div>
-        <div className={`modal-art image-${project.id}`}>
-          <span>{project.title}</span>
-
+        <div className="modal-art">
+          <picture>
+            {project.reducedMotionImage && (
+              <source media="(prefers-reduced-motion: reduce)" srcSet={project.reducedMotionImage} />
+            )}
+            <Image src={project.image} alt={project.imageAlt} width={project.imageWidth}
+              height={project.imageHeight} unoptimized={Boolean(project.reducedMotionImage)} sizes="(max-width: 760px) 90vw, 400px" />
+          </picture>
+          {project.photo && (
+            <figure>
+              <Image src={project.photo.src} alt="" width={project.photo.width} height={project.photo.height}
+                sizes="(max-width: 760px) 90vw, 400px" />
+              <figcaption>{project.photo.caption}</figcaption>
+            </figure>
+          )}
         </div>
       </div>
       <div className="modal-bottom">

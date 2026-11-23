@@ -35,11 +35,11 @@
   margin: 0 0 16px;
 }
 .modal-lede {
-  font-size: 14px;
+  font-size: 1.0rem;
   line-height: 1.7;
 }
 .modal-paragraph {
-  font-size: 11px;
+  font-size: 0.875rem;
   color: var(--muted);
   line-height: 1.8;
 }
@@ -53,7 +53,7 @@
   border: 1px solid var(--line);
   border-radius: 30px;
   padding: 6px 10px;
-  font-size: 9px;
+  font-size: 0.875rem;
   color: var(--muted);
 }
 .modal-links {
@@ -64,32 +64,22 @@
 }
 .placeholder-note {
   color: var(--muted);
-  font-size: 10px;
+  font-size: 0.875rem;
 }
 .modal-art {
-  min-height: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  text-align: center;
-  padding: 20px;
+  display: grid;
+  align-self: start;
+  min-width: 0;
+  gap: 1rem;
 }
-.modal-art span {
-  font: italic 38px var(--font-sans), sans-serif;
-  color: rgba(37,43,48,.8);
-}
-.modal-art small {
-  font-size: 8px;
-  letter-spacing: .12em;
-  color: rgba(37,43,48,.55);
-}
+.modal-art img { display: block; width: 100%; height: auto; }
+.modal-art figure { margin: 0; }
+.modal-art figcaption { margin-top: .4rem; color: var(--muted); font-size: .9rem; }
 .modal-bottom {
   border-top: 1px solid var(--line);
   padding-top: 18px;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 0.875rem;
 }
 .modal-bottom button {
   border: 0;
@@ -98,5 +88,5 @@
   align-items: center;
   gap: 5px;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 0.875rem;
 }

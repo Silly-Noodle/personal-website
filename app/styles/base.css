@@ -2,7 +2,7 @@
   --paper: #f6efe3;
   --paper-deep: #ece2d3;
   --ink: #2f241d;
-  --muted: #8c7868;
+  --muted: #705d4e;
   --line: #ddcfbe;
   --teal: #7d8f95;
   --rust: #b36f4c;
@@ -15,6 +15,7 @@ html {
 }
 body {
   margin: 0;
+  font-size: 1.0625rem;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-sans), sans-serif;
